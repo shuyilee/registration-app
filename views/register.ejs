@@ -1,0 +1,90 @@
+<link rel='stylesheet' href='views/style.css' />
+<form autocomplete='off' class='form'>
+    <div class='control'>
+        <h1>
+            Register
+        </h1>
+    </div>
+    <form action="/register" method="POST">
+        <!--first name-->
+        <div class='control block-cube block-input'>
+            <input name='firstname' placeholder='First name' type='text' minlength="2" maxlength="50" pattern="[A-Za-z]">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <!--last name-->
+        <div class='control block-cube block-input'>
+            <input name='lastname' placeholder='Last name' type='text' minlength="2" maxlength="50" pattern="[A-Za-z]">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <!--email-->
+        <div class='control block-cube block-input'>
+            <input name='email' placeholder='Email' type='email'>
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <!--password-->
+        <div class='control block-cube block-input'>
+            <input name='password' placeholder='Password' type='password' pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[1-9])(?=.*\d).{8,100}">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <!--confirm password-->
+        <div class='control block-cube block-input'>
+            <input name='confirmpassword' placeholder='Confirm Password' type='password'>
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <button class='btn block-cube block-cube-hover' type='submit'>
+      <div class='bg-top'>
+        <div class='bg-inner'></div>
+      </div>
+      <div class='bg-right'>
+        <div class='bg-inner'></div>
+      </div>
+      <div class='bg'>
+        <div class='bg-inner'></div>
+      </div>
+      <div class='text'>
+        Submit
+      </div>
+    </button>
+    </form>
+    <script src="form.js"></script>
+</form>
